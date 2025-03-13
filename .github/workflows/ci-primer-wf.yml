@@ -25,3 +25,13 @@ jobs:
           print (platform.system())
           print (platform.machine())
         shell: python
+  comandos_windows:
+   runs-on: windows-latest
+
+   steps:
+     - name: PowerShell
+       run: |
+              Get-Location
+              Get-ChildItem
+       shell: powershell
+
