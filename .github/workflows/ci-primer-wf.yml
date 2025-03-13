@@ -22,4 +22,6 @@ jobs:
         run: |
           import platform
           print (platform.processor())
+          print (platform.system())
+          print (platform.machine())
         shell: python
